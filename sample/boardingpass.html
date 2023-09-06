@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Samsung Air ✈️</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./res/style/samsung-wallet-demo.css"
+    />
+  </head>
+
+  <body>
+    <div class="samsung-air-container">
+      <nav class="nav-bar">
+        <div class="nav-bar-inner">
+          <div class="nav-bar-logo">
+            <div class="samsung-logo"></div>
+          </div>
+          <div class="nav-bar-menu">
+            <a class="nav-bar-menu-item">
+              <div class="search-icon"></div>
+            </a>
+            <a class="nav-bar-menu-item">
+              <div class="cart-icon"></div>
+            </a>
+            <a class="nav-bar-menu-item">
+              <div class="menu-icon"></div>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <p class="main-title">Samsung Air ✈️</p>
+      <div class="contents">
+        <div class="contents-item trip">
+          <p class="title">Round Trip</p>
+          <p class="content">SEL ➡ SFO</p>
+        </div>
+        <div class="contents-item">
+          <div class="title">Flight Number</div>
+          <p class="content">SE123</p>
+        </div>
+        <div class="contents-item">
+          <div class="title">Carbin Class</div>
+          <p class="content">First Class</p>
+        </div>
+        <div class="contents-item">
+          <div class="title">Seat</div>
+          <p class="content">A15</p>
+        </div>
+      </div>
+      <!-- Add Samsung Wallet Button Script On Your Website -->
+      <script
+        src="https://us-cdn-gpp.mcsvc.samsung.com/lib/wallet-card.js"
+        type="text/javascript"
+      ></script>
+      <div id="TARGET_ID"></div>
+      <script>
+        samsungWallet.addButton({
+          cardId: "3fre4kmmboq00",
+          cdata: "CDATA",
+          partnerCode: "4030093436155138240",
+          RDClickUrl:
+            "https://us-rd.mcsvc.samsung.com/statistics/click/addtowlt?ep=C50C3754FEB24833B30C10B275BB6AB8;cc=GC;ii=1287098641030840334;co=4030093436155138240;cp=1288017491089625089;si=24;pg=101212967375212546;pi=Aqz68EBXSx6Mv9jsaZxzaA;tp=4030093501522138240;li=0&utm_source=partner&utm_medium=web",
+          RDImpressionUrl:
+            "https://us-rd.mcsvc.samsung.com/statistics/impression/addtowlt?ep=C50C3754FEB24833B30C10B275BB6AB8;cc=GC;ii=1287098641030840334;co=4030093436155138240;cp=1288017491089625089;si=24;pg=101212967375212546;pi=Aqz68EBXSx6Mv9jsaZxzaA;tp=4030093501522138240;li=0&utm_source=partner&utm_medium=web",
+          targetId: "TARGET_ID",
+          buttonId: "BUTTON_ID",
+          target: "wallet",
+          showForced: true,
+        });
+      </script>
+    </div>
+  </body>
+</html>
